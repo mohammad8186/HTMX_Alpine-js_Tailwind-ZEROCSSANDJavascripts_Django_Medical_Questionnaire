@@ -3,6 +3,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/medical-questionnaire?color=blue&style=flat)
 ![GitHub stars](https://img.shields.io/github/stars/yourusername/medical-questionnaire?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/yourusername/medical-questionnaire?style=social)
+![Django](https://img.shields.io/badge/Django-v4+-blue)  
+![Python](https://img.shields.io/badge/Python-3.8+-brightgreen)  
+![HTMX](https://img.shields.io/badge/HTMX-Enabled-orange)  
+![Status](https://img.shields.io/badge/Status-Active-green)  
 
 A **modern and interactive medical questionnaire** built with **Django, HTMX, and Alpine.js**.  
 This application allows patients to **record their symptoms and medication intake** interactively.
