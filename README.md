@@ -1,4 +1,5 @@
 # 🏥 Medical Questionnaire - Django & HTMX App
+# Handling with Tailwind , HTMX , Alpinejs with 0% using Vanilajs and CSS
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/medical-questionnaire?color=blue&style=flat)
 ![GitHub stars](https://img.shields.io/github/stars/yourusername/medical-questionnaire?style=social)
