@@ -1,0 +1,65 @@
+{% extends 'base.html' %} 
+{% block title %}اطلاعات قرص{% endblock %}
+
+{% block content %}
+<div 
+    class="flex justify-center items-center min-h-screen" 
+    hx-post="."
+    hx-target="#page" 
+    hx-swap="outerHTML"
+>
+    <div class="bg-gray-900 bg-opacity-75 p-8 rounded-2xl shadow-2xl w-full max-w-md transform transition-all duration-500 hover:scale-105">
+        <h2 class="text-2xl font-bold text-white mb-6 text-center">وارد کردن اطلاعات قرص</h2>
+
+        <form method="post" class="space-y-6">
+            {% csrf_token %}
+
+            <p class="text-gray-300 mb-2 text-center">لطفاً اطلاعات موردنیاز را وارد کنید</p>
+
+            <div class="space-y-3 text-right rtl">
+                <label for="aluminum_tablets" class="block text-gray-200">تعداد قرص‌های آنتی اسید</label>
+                <input 
+                    type="number" 
+                    id="aluminum_tablets" 
+                    name="aluminum_tablets" 
+                    min="0"
+                    class="w-full bg-gray-700 border border-gray-600 text-white p-3 rounded-lg focus:ring-2 focus:ring-blue-400"
+                    placeholder="تعداد قرص‌های آلومینیومی"
+                >
+
+                <label for="other_pills" class="block text-gray-200">سایر داروها</label>
+                <textarea 
+                    id="other_pills" 
+                    name="other_pills" 
+                    rows="3"
+                    class="w-full bg-gray-700 border border-gray-600 text-white p-3 rounded-lg focus:ring-2 focus:ring-blue-400 resize-none overflow-y-auto"
+                    placeholder="سایر داروهای مصرفی را وارد کنید"
+                ></textarea>
+
+                <label for="side_effects" class="block text-gray-200">عوارض جانبی</label>
+                <textarea 
+                    id="side_effects" 
+                    name="side_effects" 
+                    rows="3"
+                    class="w-full bg-gray-700 border border-gray-600 text-white p-3 rounded-lg focus:ring-2 focus:ring-blue-400 resize-none overflow-y-auto"
+                    placeholder="در صورت مشاهده عوارض جانبی، توضیح دهید"
+                ></textarea>
+            </div>
+
+            <div x-data="{ progress: 100 }" class="relative w-full h-4 bg-gray-700 rounded-full overflow-hidden mt-4">
+                <div class="h-full bg-green-400 transition-all duration-700 ease-out" :style="'width: ' + progress + '%'"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-sm">
+                    <span x-text="progress + '%'"></span>
+                </div>
+            </div>
+
+            <button 
+                type="submit" 
+                class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+            >
+                ارسال
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}

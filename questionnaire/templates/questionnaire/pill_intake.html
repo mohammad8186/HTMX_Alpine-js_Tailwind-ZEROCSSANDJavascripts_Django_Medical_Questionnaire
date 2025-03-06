@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Pill Intake{% endblock %}
+{% block content %}
+<div hx-post="." hx-target="#page" hx-swap="outerHTML" class="flex justify-center items-center min-h-screen">
+    <div class="bg-gray-900 bg-opacity-75 p-8 rounded-2xl shadow-2xl w-full max-w-md transform transition-all duration-500 hover:scale-105">
+        <h2 class="text-2xl font-bold text-white mb-6 text-center">مصرف قرص</h2>
+        
+        <form method="POST" class="space-y-4">
+            {% csrf_token %}
+            <p class="text-gray-300 mb-2 text-center">لطفا زمان های مصرف قرص خود را انتخاب کنید</p>
+            <div class="space-y-3 text-right rtl">
+                {% for option in pill_options %}
+                <label class="flex items-center bg-gray-700 border border-gray-600 p-3 rounded-lg cursor-pointer hover:bg-gray-600 transition flex-row-reverse">
+                    <input type="checkbox" name="pill_intake[]" value="{{ option }}" class="ml-2 accent-green-400">
+                    <span class="text-gray-200">{{ option }}</span>
+                </label>
+                {% endfor %}
+            </div>
+
+            <div x-data="{ progress: 33 }" class="relative w-full h-4 bg-gray-700 rounded-full overflow-hidden mt-4">
+                <div class="h-full bg-green-400 transition-all duration-700 ease-out" :style="'width: ' + progress + '%'"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-white font-bold text-sm">
+                    <span x-text="progress + '%'"></span>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
+                مرحله بعد
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}

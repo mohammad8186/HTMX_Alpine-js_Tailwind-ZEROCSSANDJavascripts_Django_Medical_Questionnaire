@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Questionnaire{% endblock %}</title>
+
+
+    <script  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'questionnaire/css/styles.css' %}">
+    <link rel="icon" href="{% static 'questionnaire/img/logo.png' %}">
+</head>
+
+<body class="bg-gray-800 text-white">
+ 
+  
+    
+
+    <div class="flex items-center justify-center min-h-screen px-4 py-8">
+        
+       
+
+        <main>
+            <div id="page" 
+            x-data="{ show: false }" 
+            x-init="setTimeout(() => show = true, 200)" 
+            x-show="show" 
+            x-transition:enter="transition transform duration-700 ease-out opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition transform duration-500 ease-in opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="animate-fadeIn">
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+    </div>
+</body>
+</html>
