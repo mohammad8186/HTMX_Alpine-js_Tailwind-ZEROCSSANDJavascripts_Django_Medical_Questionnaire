@@ -19,20 +19,30 @@ This application allows patients to **record their symptoms and medication intak
 ✅ **Smooth transitions using Alpine.js**  
 ✅ **HTMX for seamless AJAX updates**  
 ✅ **Secure authentication system (optional)**  
-✅ **Easy deployment with Docker**  
+✅ **Easy deployment with Docker**
+✅ **User Authentication:** Secure login with patient credentials  
+✅ **Daily Questionnaires:** Patients record pill intake and symptoms  
+✅ **Treatment Tracking:** Stores data for long-term analysis  
+✅ **HTMX-Powered UI:** Smooth interactions without page reloads  
+✅ **Smart Session Handling:** Redirects users to incomplete steps 
 
 ---
 
 ## 📸 Screenshots
 ### **Main Form UI**
-![Screenshot](https://via.placeholder.com/800x400?text=Medical+Form+UI)
+<img width="263" alt="22222" src="https://github.com/user-attachments/assets/0a3f44df-ba36-4e2d-8ab2-298d0cefdf47" />
+
 
 ### **Progress Bar & Smooth Transitions**
-![Screenshot](https://via.placeholder.com/800x400?text=Progress+Bar+Example)
+<img width="335" alt="3333" src="https://github.com/user-attachments/assets/e639fce1-774f-4fb4-9f19-612ab5c99109" />
 
-> *More screenshots available in the `screenshots/` folder.*
+<img width="280" alt="4444" src="https://github.com/user-attachments/assets/80059f06-f717-47a3-bbd5-74dab5ded849" />
 
----
+<img width="257" alt="55555" src="https://github.com/user-attachments/assets/0223215f-2ce0-4068-9af3-c3bcc498e3d7" />
+
+<img width="260" alt="6666" src="https://github.com/user-attachments/assets/35b0898e-6b91-489c-952f-9bdc83735599" />
+
+
 
 ## 🛠️ Technologies Used
 | Technology  | Purpose |
@@ -49,5 +59,5 @@ This application allows patients to **record their symptoms and medication intak
 
 ### **🔹 Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/medical-questionnaire.git
+git clone https://github.com/mohammad8186/medical-questionnaire.git
 cd medical-questionnaire
