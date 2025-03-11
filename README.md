@@ -29,12 +29,6 @@ This application allows patients to **record their symptoms and medication intak
 
 ---
 
-## 📸 Screenshots
-### **Main Form UI**
-<img width="263" alt="22222" src="https://github.com/user-attachments/assets/0a3f44df-ba36-4e2d-8ab2-298d0cefdf47" />
-
-
-### **Progress Bar & Smooth Transitions**
 
 
 
