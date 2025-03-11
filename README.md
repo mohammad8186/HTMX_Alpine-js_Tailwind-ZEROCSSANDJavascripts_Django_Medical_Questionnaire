@@ -35,13 +35,7 @@ This application allows patients to **record their symptoms and medication intak
 
 
 ### **Progress Bar & Smooth Transitions**
-<img width="335" alt="3333" src="https://github.com/user-attachments/assets/e639fce1-774f-4fb4-9f19-612ab5c99109" />
 
-<img width="280" alt="4444" src="https://github.com/user-attachments/assets/80059f06-f717-47a3-bbd5-74dab5ded849" />
-
-<img width="257" alt="55555" src="https://github.com/user-attachments/assets/0223215f-2ce0-4068-9af3-c3bcc498e3d7" />
-
-<img width="260" alt="6666" src="https://github.com/user-attachments/assets/35b0898e-6b91-489c-952f-9bdc83735599" />
 
 
 
